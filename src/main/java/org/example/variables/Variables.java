@@ -122,4 +122,43 @@ public class Variables {
         boolean falsey = false;
         System.out.println("falsey: " + falsey);
     }
+
+    public static void arithmeticOperators() {
+        int three = 3;
+        int five = 5;
+        float threeSeven = 3.7F;
+        float fiveNine = 5.9F;
+
+        System.out.println("Arithmetic operations on Integers");
+        int addInt = three + five;
+        System.out.println("addInt:\t\t\t" + three + " + " + five + " = " + addInt);
+
+        int subInt = five - three;
+        System.out.println("subInt:\t\t\t" + five + " - " + three + " = " + subInt);
+
+        int multiplyInt = three * five;
+        System.out.println("multiplyInt:\t" + three + " * " + five + " = " + multiplyInt);
+
+        int divideInt = five / three;
+        System.out.println("divideInt:\t\t" + five + " / " + three + " = " + divideInt);
+
+        int modInt = five % three;
+        System.out.println("modInt:\t\t\t" + five + " % " + three + " = " + modInt);
+
+        System.out.println("\nArithmetic operations on Floats");
+        float addFloat = threeSeven + fiveNine;
+        System.out.println("addFloat:\t\t" + threeSeven + " + " + fiveNine + " = " + addFloat);
+
+        float subFloat = fiveNine - threeSeven;
+        System.out.println("subFloat:\t\t" + fiveNine + " - " + threeSeven + " = " + subFloat);
+
+        float multiplyFloat = threeSeven * fiveNine;
+        System.out.println("multiplyFloat:\t" + threeSeven + " * " + fiveNine + " = " + multiplyFloat);
+
+        float divideFloat = fiveNine / threeSeven;
+        System.out.println("divideFloat:\t" + fiveNine + " / " + threeSeven + " = " + divideFloat);
+
+        float modFloat = fiveNine % threeSeven;
+        System.out.println("modFloat:\t\t" + fiveNine + " % " + threeSeven + " = " + modFloat);
+    }
 }
