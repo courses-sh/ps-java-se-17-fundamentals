@@ -9,6 +9,7 @@ public class Main {
         // Variables.primitiveDataTypesFloatsAndDoubles();
         // Variables.primitiveDataTypesCharactersAndBooleans();
         // Variables.arithmeticOperators();
-        Variables.prefixPostfixAndCompoundAssignmentOperators();
+        // Variables.prefixPostfixAndCompoundAssignmentOperators();
+        Variables.closerLookAtOperatorPrecedence();
     }
 }
