@@ -161,4 +161,31 @@ public class Variables {
         float modFloat = fiveNine % threeSeven;
         System.out.println("modFloat:\t\t" + fiveNine + " % " + threeSeven + " = " + modFloat);
     }
+
+    public static void prefixPostfixAndCompoundAssignmentOperators() {
+        // prefix operators
+        int someVal = 5;
+        System.out.println("someVal (before): " + someVal);
+        System.out.println("someVal (during): " + ++someVal);
+        System.out.println("someVal (after): " + someVal);
+        System.out.println();
+
+        // postfix operators
+        int otherVal = 5;
+        System.out.println("otherVal (before): " + otherVal);
+        System.out.println("otherVal (during): " + otherVal++);
+        System.out.println("otherVal (after): " + otherVal);
+        System.out.println();
+
+        // compound assignment operators
+        int myVal = 50;
+        myVal -= 5;
+        System.out.println("myVal: " + myVal);
+
+        int other = 100;
+        int val1 = 5;
+        int val2 = 10;
+        other /= val1 * val2;
+        System.out.println("other: " + other);
+    }
 }

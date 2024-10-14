@@ -8,6 +8,7 @@ public class Main {
         // Variables.primitiveDataTypesIntegers();
         // Variables.primitiveDataTypesFloatsAndDoubles();
         // Variables.primitiveDataTypesCharactersAndBooleans();
-        Variables.arithmeticOperators();
+        // Variables.arithmeticOperators();
+        Variables.prefixPostfixAndCompoundAssignmentOperators();
     }
 }
