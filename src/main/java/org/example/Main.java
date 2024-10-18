@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.variables.Variables;
+import org.example.conditionals.Conditionals;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class Main {
         // Variables.primitiveDataTypesCharactersAndBooleans();
         // Variables.arithmeticOperators();
         // Variables.prefixPostfixAndCompoundAssignmentOperators();
-        Variables.closerLookAtOperatorPrecedence();
+//        Variables.closerLookAtOperatorPrecedence();
+
+        // 04 - Conditional Logic and Block Statements
+        Conditionals.conditionalLogic();
     }
 }
