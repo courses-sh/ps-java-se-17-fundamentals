@@ -1,6 +1,7 @@
 package org.example;
 
-import org.example.variables.Variables;
+// import org.example.variables.Variables;
+
 import org.example.conditionals.Conditionals;
 
 public class Main {
@@ -15,6 +16,7 @@ public class Main {
 
         // 04 - Conditional Logic and Block Statements
         // Conditionals.conditionalLogic();
-        Conditionals.logicalVsConditional();
+        // Conditionals.logicalVsConditional();
+        Conditionals.blockStatements();
     }
 }
