@@ -11,9 +11,10 @@ public class Main {
         // Variables.primitiveDataTypesCharactersAndBooleans();
         // Variables.arithmeticOperators();
         // Variables.prefixPostfixAndCompoundAssignmentOperators();
-//        Variables.closerLookAtOperatorPrecedence();
+        // Variables.closerLookAtOperatorPrecedence();
 
         // 04 - Conditional Logic and Block Statements
-        Conditionals.conditionalLogic();
+        // Conditionals.conditionalLogic();
+        Conditionals.logicalVsConditional();
     }
 }
