@@ -28,4 +28,20 @@ public class Looping {
             System.out.println(i);
         }
     }
+
+    public static void arrays() {
+        // float[] vals = new float[3];
+
+        // vals[0] = 10.0f;
+        // vals[1] = 20.0f;
+        // vals[2] = 30.0f;
+
+        float[] vals = {10.0f, 20.0f, 30.0f};
+
+        float sum = 0.0f;
+        for (int i = 0; i < vals.length; i++) {
+            sum += vals[i];
+        }
+        System.out.println("sum: " + sum);
+    }
 }
