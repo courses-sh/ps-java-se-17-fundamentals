@@ -1,32 +1,33 @@
 package org.example.calcengine;
 
 public class CalcEngine {
-    // 10 - Using Switch Statement and Conditional Assignment
+    // 05 - Looping and Arrays -> 06 - CalcEngine and Parallel Arrays
     public static void engine() {
-        double val1 = 100.0d;
-        double val2 = 50.0d;
-        double result = 0.0d;
-        char optCode = 'd';
+        double[] leftVals = {100.0d, 25.0d, 225.0d, 11.0d};
+        double[] rightVals = {50.0d, 92.0d, 17.0d, 3.0d};
+        char[] optCodes = {'d', 'a', 's', 'm'};
+        double[] results = new double[optCodes.length];
 
 
-        switch (optCode) {
-            case 'a':
-                result = val1 + val2;
-                break;
-            case 's':
-                result = val1 - val2;
-                break;
-            case 'm':
-                result = val1 * val2;
-                break;
-            case 'd':
-                result = val2 != 0 ? val1 / val2 : 0.0d;
-            default:
-                System.out.println("Invalid optCode: " + optCode);
-                result = 0.0d;
-                break;
+        for (int i = 0; i < optCodes.length; i++) {
+            switch (optCodes[i]) {
+                case 'a':
+                    results[i] = leftVals[i] + rightVals[i];
+                    break;
+                case 's':
+                    results[i] = leftVals[i] - rightVals[i];
+                    break;
+                case 'm':
+                    results[i] = leftVals[i] * rightVals[i];
+                    break;
+                case 'd':
+                    results[i] = rightVals[i] != 0 ? leftVals[i] / rightVals[i] : 0.0d;
+                default:
+                    System.out.println("Invalid optCode: " + optCodes[i]);
+                    results[i] = 0.0d;
+                    break;
+            }
         }
-
-        System.out.println(result);
+        System.out.println(results.length);
     }
 }
