@@ -21,7 +21,8 @@ public class Main {
         // CalcEngine.engine();
 
         // 05 - Looping and Arrays
-        Looping.whileLoop();
-        Looping.dowWileLoop();
+        // Looping.whileLoop();
+        // Looping.dowWileLoop();
+        Looping.forLoop();
     }
 }

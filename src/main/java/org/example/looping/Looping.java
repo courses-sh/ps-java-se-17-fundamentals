@@ -22,4 +22,10 @@ public class Looping {
             System.out.println(init);
         } while (init < 25);
     }
+
+    public static void forLoop() {
+        for (int i = 1; i < 100; i *= 2) {
+            System.out.println(i);
+        }
+    }
 }
