@@ -1,7 +1,7 @@
 package org.example.calcengine;
 
 public class CalcEngine {
-    // 05 - Looping and Arrays -> 06 - CalcEngine and Parallel Arrays
+    // 05 - Looping and Arrays -> 08 - CalcEngine and For-each Loop
     public static void engine() {
         double[] leftVals = {100.0d, 25.0d, 225.0d, 11.0d};
         double[] rightVals = {50.0d, 92.0d, 17.0d, 3.0d};
@@ -22,12 +22,16 @@ public class CalcEngine {
                     break;
                 case 'd':
                     results[i] = rightVals[i] != 0 ? leftVals[i] / rightVals[i] : 0.0d;
+                    break;
                 default:
                     System.out.println("Invalid optCode: " + optCodes[i]);
                     results[i] = 0.0d;
                     break;
             }
         }
-        System.out.println(results.length);
+
+        for (double current : results) {
+            System.out.println("current: " + current);
+        }
     }
 }

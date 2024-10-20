@@ -2,6 +2,7 @@ package org.example;
 
 // import org.example.variables.Variables;
 
+import org.example.calcengine.CalcEngine;
 import org.example.looping.Looping;
 
 public class Main {
@@ -24,6 +25,7 @@ public class Main {
         // Looping.whileLoop();
         // Looping.dowWileLoop();
         // Looping.forLoop();
-        Looping.arrays();
+        // Looping.arrays();
+        CalcEngine.engine();
     }
 }
