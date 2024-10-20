@@ -2,8 +2,7 @@ package org.example;
 
 // import org.example.variables.Variables;
 
-import org.example.calcengine.CalcEngine;
-import org.example.conditionals.Conditionals;
+import org.example.looping.Looping;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +18,9 @@ public class Main {
         // Conditionals.conditionalLogic();
         // Conditionals.logicalVsConditional();
         // Conditionals.blockStatements();
-        CalcEngine.engine();
+        // CalcEngine.engine();
+
+        // 05 - Looping and Arrays
+        Looping.whileLoop();
     }
 }
