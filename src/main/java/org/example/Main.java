@@ -22,5 +22,6 @@ public class Main {
 
         // 05 - Looping and Arrays
         Looping.whileLoop();
+        Looping.dowWileLoop();
     }
 }

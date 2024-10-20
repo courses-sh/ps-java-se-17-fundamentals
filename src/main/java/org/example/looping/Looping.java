@@ -11,4 +11,15 @@ public class Looping {
         }
         System.out.println(factorial);
     }
+
+    public static void dowWileLoop() {
+        int init = 80;
+
+        do {
+            System.out.print(init);
+            System.out.print(" * 2 = ");
+            init *= 2;
+            System.out.println(init);
+        } while (init < 25);
+    }
 }
