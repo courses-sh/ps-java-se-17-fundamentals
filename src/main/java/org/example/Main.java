@@ -2,6 +2,7 @@ package org.example;
 
 // import org.example.variables.Variables;
 // import org.example.looping.Looping;
+
 import org.example.methods.DeclaringAndCallingMethods;
 // import org.example.calcengine.CalcEngine;
 
@@ -29,6 +30,7 @@ public class Main {
 
         // 06 - Understanding Methods
         DeclaringAndCallingMethods.doSomething();
+        DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
 
         // Exercise
         // CalcEngine.engine();
