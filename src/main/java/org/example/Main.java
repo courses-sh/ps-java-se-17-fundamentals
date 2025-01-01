@@ -1,9 +1,9 @@
 package org.example;
 
 // import org.example.variables.Variables;
-
-import org.example.calcengine.CalcEngine;
-import org.example.looping.Looping;
+// import org.example.looping.Looping;
+import org.example.methods.DeclaringAndCallingMethods;
+// import org.example.calcengine.CalcEngine;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +26,11 @@ public class Main {
         // Looping.dowWileLoop();
         // Looping.forLoop();
         // Looping.arrays();
-        CalcEngine.engine();
+
+        // 06 - Understanding Methods
+        DeclaringAndCallingMethods.doSomething();
+
+        // Exercise
+        // CalcEngine.engine();
     }
 }
