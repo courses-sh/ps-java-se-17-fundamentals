@@ -4,7 +4,7 @@ package org.example;
 // import org.example.looping.Looping;
 
 import org.example.methods.DeclaringAndCallingMethods;
-// import org.example.calcengine.CalcEngine;
+import org.example.calcengine.CalcEngine;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,10 +29,10 @@ public class Main {
         // Looping.arrays();
 
         // 06 - Understanding Methods
-        DeclaringAndCallingMethods.doSomething();
-        DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
+//        DeclaringAndCallingMethods.doSomething();
+//        DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
 
         // Exercise
-        // CalcEngine.engine();
+        CalcEngine.engine(args);
     }
 }
