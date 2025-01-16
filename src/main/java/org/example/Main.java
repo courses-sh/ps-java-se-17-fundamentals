@@ -29,10 +29,14 @@ public class Main {
         // Looping.arrays();
 
         // 06 - Understanding Methods
-//        DeclaringAndCallingMethods.doSomething();
-//        DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
+        // DeclaringAndCallingMethods.doSomething();
+        // DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
 
         // Exercise
-        CalcEngine.engine(args);
+        // Run: `java org/example/Main.java a 2000 300`
+         CalcEngine.engine(args);
+
+        // 07 - Working with Strings
+
     }
 }
