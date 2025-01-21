@@ -4,12 +4,13 @@ public class UnderstandingClassesObjects {
     public static void declaringClasses() {
         Flight flight = new Flight();
 
-        System.out.println("New Flight - seats: " + flight.seats + ", passengers: " + flight.passengers);
+        System.out.println("New Flight - seats: " + flight.getSeats() + ", passengers: " + flight.passengers);
 
         while (flight.passengers < 10) {
             flight.addPassenger();
         }
 
-        System.out.println("Updated Flight - seats: " + flight.seats + ", passengers: " + flight.passengers);
+        flight.setSeats(200);
+        System.out.println("Updated Flight - seats: " + flight.getSeats() + ", passengers: " + flight.passengers);
     }
 }

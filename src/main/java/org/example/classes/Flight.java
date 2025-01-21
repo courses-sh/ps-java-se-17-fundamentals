@@ -2,11 +2,20 @@ package org.example.classes;
 
 public class Flight {
     int passengers;
-    int seats;
+    private int seats;
 
     public Flight() {
         passengers = 0;
         seats = 150;
+    }
+
+    // getter
+    public int getSeats() {
+        return seats;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
 
     public void addPassenger() {
