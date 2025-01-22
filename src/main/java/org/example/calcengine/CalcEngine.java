@@ -16,6 +16,8 @@ public class CalcEngine {
             System.out.println("result = " + equation.getResult());
         }
 
+        System.out.println("Average result = " + MathEquation.getAverageResult());
+
         if (args.length == 1 && args[0].equals("interactive")) {
             executeInteractively();
         } else if (args.length == 3) {

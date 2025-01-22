@@ -6,6 +6,10 @@ public class MathEquation {
     private char opCode;
     private double result;
 
+    private static int numberOfCalculations;
+    private static double sumOfResults;
+
+
     public void setLeftVal(double val) {
         this.leftVal = val;
     }
@@ -70,5 +74,11 @@ public class MathEquation {
                 result = 0.0d;
                 break;
         }
+        numberOfCalculations++;
+        sumOfResults += result;
+    }
+
+    public static double getAverageResult() {
+        return sumOfResults / numberOfCalculations;
     }
 }
