@@ -1,10 +1,55 @@
 package org.example.calcengine;
 
 public class MathEquation {
-    double leftVal;
-    double rightVal;
-    char opCode;
-    double result;
+    private double leftVal;
+    private double rightVal;
+    private char opCode;
+    private double result;
+
+    public void setLeftVal(double val) {
+        this.leftVal = val;
+    }
+
+    public double getLeftVal() {
+        return leftVal;
+    }
+
+    public void setRightVal(double rightVal) {
+        this.rightVal = rightVal;
+    }
+
+    public double getRightVal() {
+        return rightVal;
+    }
+
+    public void setOpCode(char opCode) {
+        this.opCode = opCode;
+    }
+
+    public char getOpCode() {
+        return opCode;
+    }
+
+    public void setResult(double result) {
+        this.result = result;
+    }
+
+    public double getResult() {
+        return result;
+    }
+
+    public MathEquation() {
+    }
+
+    public MathEquation(char opCode) {
+        this.setOpCode(opCode);
+    }
+
+    public MathEquation(char opCode, double leftVal, double rightVal) {
+        this(opCode);
+        this.setLeftVal(leftVal);
+        this.setRightVal(rightVal);
+    }
 
     void execute() {
         switch (opCode) {
