@@ -18,6 +18,13 @@ public class CalcEngine {
 
         System.out.println("Average result = " + MathEquation.getAverageResult());
 
+        System.out.println("\nUsing Overloads\n");
+        MathEquation equationOverload = new MathEquation('d');
+        double leftDouble = 9.0d;
+        double rightDouble = 4.0d;
+        equationOverload.execute(leftDouble, rightDouble);
+        System.out.println("Overload result with doubles: " + equationOverload.getResult());
+
         if (args.length == 1 && args[0].equals("interactive")) {
             executeInteractively();
         } else if (args.length == 3) {
