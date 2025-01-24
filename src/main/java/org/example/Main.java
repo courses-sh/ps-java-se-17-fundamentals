@@ -7,6 +7,7 @@ import org.example.calcengine.CalcEngine;
 //import org.example.methods.DeclaringAndCallingMethods;
 //import org.example.strings.WorkingWithStrings;
 //import org.example.variables.Variables;
+import org.example.methods.ACloserLookAtMethods;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,12 +37,15 @@ public class Main {
 
         // Exercise
         // Run: `java org/example/Main.java a 2000 300`
-        CalcEngine.engine(args);
+//        CalcEngine.engine(args);
 
         // 07 - Working with Strings
 //         WorkingWithStrings.stringBuilder();
 
         // 08 - Understanding Classes and Objects
 //         UnderstandingClassesObjects.declaringClasses();
+
+        // 11 - A Closer Look at Methods
+        ACloserLookAtMethods.overridingObjectEquality();
     }
 }
