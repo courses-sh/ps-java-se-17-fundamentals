@@ -37,7 +37,7 @@ public class Main {
 
         // Exercise
         // Run: `java org/example/Main.java a 2000 300`
-//        CalcEngine.engine(args);
+        CalcEngine.engine(args);
 
         // 07 - Working with Strings
 //         WorkingWithStrings.stringBuilder();
@@ -46,6 +46,6 @@ public class Main {
 //         UnderstandingClassesObjects.declaringClasses();
 
         // 11 - A Closer Look at Methods
-        ACloserLookAtMethods.overridingObjectEquality();
+//        ACloserLookAtMethods.overridingObjectEquality();
     }
 }

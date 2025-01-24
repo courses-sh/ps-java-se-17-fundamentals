@@ -13,25 +13,34 @@ public class CalcEngine {
 
         for (MathEquation equation : equations) {
             equation.execute();
-            System.out.println("result = " + equation.getResult());
+            System.out.println(equation);
         }
 
         System.out.println("Average result = " + MathEquation.getAverageResult());
 
+        // useOverloads();
+        executeCli(args);
+    }
+
+    private static void executeCli(String[] args) {
+        if (args.length >= 1) {
+            if (args.length == 1 && args[0].equals("interactive")) {
+                executeInteractively();
+            } else if (args.length == 3) {
+                handleCommandLine(args);
+            } else {
+                System.out.println("Please provide an operation code and 2 numeric values");
+            }
+        }
+    }
+
+    private static void useOverloads() {
         System.out.println("\nUsing Overloads\n");
         MathEquation equationOverload = new MathEquation('d');
         double leftDouble = 9.0d;
         double rightDouble = 4.0d;
         equationOverload.execute(leftDouble, rightDouble);
         System.out.println("Overload result with doubles: " + equationOverload.getResult());
-
-        if (args.length == 1 && args[0].equals("interactive")) {
-            executeInteractively();
-        } else if (args.length == 3) {
-            handleCommandLine(args);
-        } else {
-            System.out.println("Please provide an operation code and 2 numeric values");
-        }
     }
 
     static void executeInteractively() {
