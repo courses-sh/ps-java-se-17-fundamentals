@@ -27,4 +27,15 @@ public class WrapperClassesEnumsRecords {
                 break;
         }
     }
+
+    public static void enumsRelativeComparison() {
+        CrewMember greta = new CrewMember(FlightCrewJob.PILOT, "Greta");
+        CrewMember bob = new CrewMember(FlightCrewJob.FLIGHT_ATTENDANT, "Bob");
+        whoIsInCharge(greta, bob);
+    }
+
+    private static void whoIsInCharge(CrewMember member1, CrewMember member2) {
+        CrewMember boss = member1.getJob().compareTo(member2.getJob()) > 0 ? member1 : member2;
+        System.out.println(boss.getName() + " is the boss");
+    }
 }

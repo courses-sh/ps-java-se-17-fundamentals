@@ -1,6 +1,7 @@
 package org.example;
 
-import org.example.calcengine.CalcEngine;
+//import org.example.calcengine.CalcEngine;
+
 import org.example.wrappers.FlightCrewJob;
 import org.example.wrappers.WrapperClassesEnumsRecords;
 //import org.example.classes.UnderstandingClassesObjects;
@@ -56,5 +57,7 @@ public class Main {
 
         FlightCrewJob job = FlightCrewJob.FLIGHT_ATTENDANT;
         WrapperClassesEnumsRecords.displayJobResponsibilities(job);
+
+        WrapperClassesEnumsRecords.enumsRelativeComparison();
     }
 }
