@@ -3,7 +3,7 @@ package org.example.calcengine;
 public class MathEquation {
     private double leftVal;
     private double rightVal;
-    private char opCode;
+    private MathOperation opCode;
     private double result;
 
     private static int numberOfCalculations;
@@ -26,11 +26,11 @@ public class MathEquation {
         return rightVal;
     }
 
-    public void setOpCode(char opCode) {
+    public void setOpCode(MathOperation opCode) {
         this.opCode = opCode;
     }
 
-    public char getOpCode() {
+    public MathOperation getOpCode() {
         return opCode;
     }
 
@@ -45,11 +45,11 @@ public class MathEquation {
     public MathEquation() {
     }
 
-    public MathEquation(char opCode) {
+    public MathEquation(MathOperation opCode) {
         this.setOpCode(opCode);
     }
 
-    public MathEquation(char opCode, double leftVal, double rightVal) {
+    public MathEquation(MathOperation opCode, double leftVal, double rightVal) {
         this(opCode);
         this.setLeftVal(leftVal);
         this.setRightVal(rightVal);
@@ -57,16 +57,16 @@ public class MathEquation {
 
     public void execute() {
         switch (opCode) {
-            case 'a':
+            case ADD:
                 result = leftVal + rightVal;
                 break;
-            case 's':
+            case SUBTRACT:
                 result = leftVal - rightVal;
                 break;
-            case 'm':
+            case MULTIPLY:
                 result = leftVal * rightVal;
                 break;
-            case 'd':
+            case DIVIDE:
                 result = rightVal != 0 ? leftVal / rightVal : 0.0d;
                 break;
             default:
@@ -97,7 +97,12 @@ public class MathEquation {
     }
 
     public char symbolFromOpCode() {
-        char[] opCodes = {'a', 's', 'm', 'd'};
+        MathOperation[] opCodes = {
+                MathOperation.ADD,
+                MathOperation.SUBTRACT,
+                MathOperation.MULTIPLY,
+                MathOperation.DIVIDE
+        };
         char[] symbols = {'+', '-', '*', '/'};
         char symbol = ' ';
         for (int index = 0; index < opCodes.length; index++) {

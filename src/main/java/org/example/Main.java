@@ -1,6 +1,6 @@
 package org.example;
 
-//import org.example.calcengine.CalcEngine;
+import org.example.calcengine.CalcEngine;
 
 import org.example.wrappers.FlightCrewJob;
 import org.example.wrappers.WrapperClassesEnumsRecords;
@@ -41,7 +41,7 @@ public class Main {
 
         // Exercise
         // Run: `java org/example/Main.java a 2000 300`
-//        CalcEngine.engine(args);
+        CalcEngine.engine(args);
 
         // 07 - Working with Strings
 //         WorkingWithStrings.stringBuilder();
@@ -53,11 +53,11 @@ public class Main {
 //        ACloserLookAtMethods.overridingObjectEquality();
 
         // 12 - Working with Wrapper Classes, Enums, and Records
-        WrapperClassesEnumsRecords.understandingEnums();
-
-        FlightCrewJob job = FlightCrewJob.FLIGHT_ATTENDANT;
-        WrapperClassesEnumsRecords.displayJobResponsibilities(job);
-
-        WrapperClassesEnumsRecords.enumsRelativeComparison();
+//        WrapperClassesEnumsRecords.understandingEnums();
+//
+//        FlightCrewJob job = FlightCrewJob.FLIGHT_ATTENDANT;
+//        WrapperClassesEnumsRecords.displayJobResponsibilities(job);
+//
+//        WrapperClassesEnumsRecords.enumsRelativeComparison();
     }
 }
