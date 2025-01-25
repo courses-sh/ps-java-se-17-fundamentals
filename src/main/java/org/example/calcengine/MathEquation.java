@@ -96,28 +96,9 @@ public class MathEquation {
         return sumOfResults / numberOfCalculations;
     }
 
-    public char symbolFromOpCode() {
-        MathOperation[] opCodes = {
-                MathOperation.ADD,
-                MathOperation.SUBTRACT,
-                MathOperation.MULTIPLY,
-                MathOperation.DIVIDE
-        };
-        char[] symbols = {'+', '-', '*', '/'};
-        char symbol = ' ';
-        for (int index = 0; index < opCodes.length; index++) {
-            if (opCode == opCodes[index]) {
-                symbol = symbols[index];
-                break;
-            }
-        }
-
-        return symbol;
-    }
-
     @Override
     public String toString() {
-        char symbol = symbolFromOpCode();
+        char symbol = opCode.getSymbol();
         StringBuilder builder = new StringBuilder(20);
         builder.append(leftVal);
         builder.append(" ");
