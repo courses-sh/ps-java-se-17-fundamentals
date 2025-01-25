@@ -1,13 +1,16 @@
 package org.example;
 
 import org.example.calcengine.CalcEngine;
+import org.example.wrappers.FlightCrewJob;
+import org.example.wrappers.WrapperClassesEnumsRecords;
 //import org.example.classes.UnderstandingClassesObjects;
 //import org.example.conditionals.Conditionals;
 //import org.example.looping.Looping;
 //import org.example.methods.DeclaringAndCallingMethods;
 //import org.example.strings.WorkingWithStrings;
 //import org.example.variables.Variables;
-import org.example.methods.ACloserLookAtMethods;
+//import org.example.methods.ACloserLookAtMethods;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +40,7 @@ public class Main {
 
         // Exercise
         // Run: `java org/example/Main.java a 2000 300`
-        CalcEngine.engine(args);
+//        CalcEngine.engine(args);
 
         // 07 - Working with Strings
 //         WorkingWithStrings.stringBuilder();
@@ -47,5 +50,11 @@ public class Main {
 
         // 11 - A Closer Look at Methods
 //        ACloserLookAtMethods.overridingObjectEquality();
+
+        // 12 - Working with Wrapper Classes, Enums, and Records
+        WrapperClassesEnumsRecords.understandingEnums();
+
+        FlightCrewJob job = FlightCrewJob.FLIGHT_ATTENDANT;
+        WrapperClassesEnumsRecords.displayJobResponsibilities(job);
     }
 }
