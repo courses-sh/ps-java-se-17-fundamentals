@@ -38,4 +38,19 @@ public class WrapperClassesEnumsRecords {
         CrewMember boss = member1.getJob().compareTo(member2.getJob()) > 0 ? member1 : member2;
         System.out.println(boss.getJob().getTitle() + " " + boss.getName() + " is the boss");
     }
+
+    public static void workingWithRecords() {
+        Passenger p1 = new Passenger("Bob", 2);
+        String name = p1.name();
+        int bags = p1.checkedBags();
+
+        System.out.println(name + " has " + bags + " checked bags");
+
+        Passenger p2 = new Passenger("Maria", 1);
+        if (p1.equals(p2)) {
+            System.out.println("Same passenger");
+        } else {
+            System.out.println("OMG! Different people");
+        }
+    }
 }
