@@ -12,5 +12,6 @@ public class UnderstandingClassesObjects {
 
         flight.setSeats(200);
         System.out.println("Updated Flight - seats: " + flight.getSeats() + ", passengers: " + flight.passengers);
+        System.out.println();
     }
 }

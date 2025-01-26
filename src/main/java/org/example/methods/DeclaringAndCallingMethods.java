@@ -5,6 +5,7 @@ public class DeclaringAndCallingMethods {
     public static void doSomething() {
         System.out.println("Inside the method");
         System.out.println("Still inside");
+        System.out.println();
     }
 
     // 03 - Parameters
@@ -13,5 +14,6 @@ public class DeclaringAndCallingMethods {
         for (int i = 1; i <= count; i++) {
             System.out.println(sum * i);
         }
+        System.out.println();
     }
 }

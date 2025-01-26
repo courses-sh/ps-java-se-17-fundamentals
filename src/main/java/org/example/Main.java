@@ -1,64 +1,64 @@
 package org.example;
 
 import org.example.calcengine.CalcEngine;
-
+import org.example.classes.UnderstandingClassesObjects;
+import org.example.conditionals.Conditionals;
+import org.example.looping.Looping;
+import org.example.methods.ACloserLookAtMethods;
+import org.example.methods.DeclaringAndCallingMethods;
+import org.example.strings.WorkingWithStrings;
+import org.example.variables.Variables;
 import org.example.wrappers.FlightCrewJob;
 import org.example.wrappers.WrapperClassesEnumsRecords;
-//import org.example.classes.UnderstandingClassesObjects;
-//import org.example.conditionals.Conditionals;
-//import org.example.looping.Looping;
-//import org.example.methods.DeclaringAndCallingMethods;
-//import org.example.strings.WorkingWithStrings;
-//import org.example.variables.Variables;
-//import org.example.methods.ACloserLookAtMethods;
 
 
 public class Main {
     public static void main(String[] args) {
-//         Variables.variables();
-//         Variables.primitiveDataTypesIntegers();
-//         Variables.primitiveDataTypesFloatsAndDoubles();
-//         Variables.primitiveDataTypesCharactersAndBooleans();
-//         Variables.arithmeticOperators();
-//         Variables.prefixPostfixAndCompoundAssignmentOperators();
-//         Variables.closerLookAtOperatorPrecedence();
+        // 03 - Variables, Data Types, and Math Operators
+        Variables.variables();
+        Variables.primitiveDataTypesIntegers();
+        Variables.primitiveDataTypesFloatsAndDoubles();
+        Variables.primitiveDataTypesCharactersAndBooleans();
+        Variables.arithmeticOperators();
+        Variables.prefixPostfixAndCompoundAssignmentOperators();
+        Variables.closerLookAtOperatorPrecedence();
 
         // 04 - Conditional Logic and Block Statements
-//         Conditionals.conditionalLogic();
-//         Conditionals.logicalVsConditional();
-//         Conditionals.blockStatements();
-//         CalcEngine.engine(args);
+        Conditionals.conditionalLogic();
+        Conditionals.logicalVsConditional();
+        Conditionals.blockStatements();
 
         // 05 - Looping and Arrays
-//         Looping.whileLoop();
-//         Looping.dowWileLoop();
-//         Looping.forLoop();
-//         Looping.arrays();
+        Looping.whileLoop();
+        Looping.dowWileLoop();
+        Looping.forLoop();
+        Looping.arrays();
 
         // 06 - Understanding Methods
-//         DeclaringAndCallingMethods.doSomething();
-//         DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
+        DeclaringAndCallingMethods.doSomething();
+        DeclaringAndCallingMethods.showSum(1.2F, 3.4F, 3);
 
         // Exercise
-        // Run: `java org/example/Main.java a 2000 300`
-//        CalcEngine.engine(args);
+        // Run: `java org/example/Main.java add 2000 300`
+        String[] cmd = new String[]{"interactive"};
+        CalcEngine.engine(cmd);
 
         // 07 - Working with Strings
-//         WorkingWithStrings.stringBuilder();
+        WorkingWithStrings.stringBuilder();
 
         // 08 - Understanding Classes and Objects
-//         UnderstandingClassesObjects.declaringClasses();
+        UnderstandingClassesObjects.declaringClasses();
 
         // 11 - A Closer Look at Methods
-//        ACloserLookAtMethods.overridingObjectEquality();
+        ACloserLookAtMethods.overridingObjectEquality();
 
         // 12 - Working with Wrapper Classes, Enums, and Records
-//        WrapperClassesEnumsRecords.understandingEnums();
-//
-//        FlightCrewJob job = FlightCrewJob.FLIGHT_ATTENDANT;
-//        WrapperClassesEnumsRecords.displayJobResponsibilities(job);
-//
-//        WrapperClassesEnumsRecords.enumsRelativeComparison();
+        WrapperClassesEnumsRecords.understandingEnums();
+
+        FlightCrewJob job = FlightCrewJob.FLIGHT_ATTENDANT;
+        WrapperClassesEnumsRecords.displayJobResponsibilities(job);
+
+        WrapperClassesEnumsRecords.enumsRelativeComparison();
         WrapperClassesEnumsRecords.workingWithRecords();
     }
 }

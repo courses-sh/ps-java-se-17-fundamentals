@@ -19,6 +19,7 @@ public class Conditionals {
 
         System.out.println();
         System.out.println("*** end of program ***");
+        System.out.println();
     }
 
     public static void blockStatements() {
@@ -32,5 +33,6 @@ public class Conditionals {
             diff = v2 - v1;
             System.out.println("v2 is greater than v1. diff = " + diff);
         }
+        System.out.println();
     }
 }

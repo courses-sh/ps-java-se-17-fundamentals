@@ -19,5 +19,6 @@ public class WorkingWithStrings {
         sb.insert(pos + 4, time);
         message = sb.toString();
         System.out.println(message);
+        System.out.println();
     }
 }

@@ -121,6 +121,7 @@ public class Variables {
 
         boolean falsey = false;
         System.out.println("falsey: " + falsey);
+        System.out.println();
     }
 
     public static void arithmeticOperators() {
@@ -160,6 +161,7 @@ public class Variables {
 
         float modFloat = fiveNine % threeSeven;
         System.out.println("modFloat:\t\t" + fiveNine + " % " + threeSeven + " = " + modFloat);
+        System.out.println();
     }
 
     public static void prefixPostfixAndCompoundAssignmentOperators() {
@@ -187,6 +189,7 @@ public class Variables {
         int val2 = 10;
         other /= val1 * val2;
         System.out.println("other: " + other);
+        System.out.println();
     }
 
     public static void closerLookAtOperatorPrecedence() {
@@ -206,5 +209,6 @@ public class Variables {
 
         System.out.println(result3);
         System.out.println(result4);
+        System.out.println();
     }
 }

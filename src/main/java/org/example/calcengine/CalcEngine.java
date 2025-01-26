@@ -20,6 +20,7 @@ public class CalcEngine {
 
         // useOverloads();
         executeCli(args);
+        System.out.println();
     }
 
     private static void executeCli(String[] args) {

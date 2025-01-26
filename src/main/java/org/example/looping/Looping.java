@@ -21,12 +21,14 @@ public class Looping {
             init *= 2;
             System.out.println(init);
         } while (init < 25);
+        System.out.println();
     }
 
     public static void forLoop() {
         for (int i = 1; i < 100; i *= 2) {
             System.out.println(i);
         }
+        System.out.println();
     }
 
     public static void arrays() {
@@ -43,5 +45,6 @@ public class Looping {
             sum += vals[i];
         }
         System.out.println("sum: " + sum);
+        System.out.println();
     }
 }

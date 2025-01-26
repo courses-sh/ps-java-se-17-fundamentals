@@ -18,5 +18,6 @@ public class ACloserLookAtMethods {
         } else {
             System.out.println("flights are not equal");
         }
+        System.out.println();
     }
 }
