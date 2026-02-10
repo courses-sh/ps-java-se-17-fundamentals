@@ -104,7 +104,7 @@ public class Variables {
         char regularU = 'U';
         System.out.println("regularU: " + regularU);
 
-        char accentedU = '\u00DA';
+        char accentedU = '\u00DA';  // hex value for 'Ú'
         System.out.println("accentedU: " + accentedU);
 
         char charMin = Character.MIN_VALUE;
