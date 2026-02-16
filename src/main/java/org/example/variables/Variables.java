@@ -32,35 +32,35 @@ public class Variables {
         System.out.println("Integer Types");
         // 8-bit
         byte minBytes = Byte.MIN_VALUE;
-        System.out.println("minBytes: " + minBytes);
+        System.out.println("minBytes: " + minBytes + ",\t\t\t\t\t size: " + Byte.BYTES * 8 + " bits");
 
         // 8-bit
         byte maxBytes = Byte.MAX_VALUE;
-        System.out.println("maxBytes: " + maxBytes);
+        System.out.println("maxBytes: " + maxBytes + ",\t\t\t\t\t size: " + Byte.BYTES * 8 + " bits");
 
         // 16-bit
         short minShort = Short.MIN_VALUE;
-        System.out.println(minShort);
+        System.out.println("minShort: " + minShort + ",\t\t\t\t size: " + Short.BYTES * 8 + " bits");
 
         // 16-bit
         short maxShort = Short.MAX_VALUE;
-        System.out.println(maxShort);
+        System.out.println("maxShort: " + maxShort + ",\t\t\t\t size: " + Short.BYTES * 8 + " bits");
 
         // 32-bit
         int minInt = Integer.MIN_VALUE;
-        System.out.println("minInt: " + minInt);
+        System.out.println("minInt: " + minInt + ",\t\t\t size: " + Integer.BYTES * 8 + " bits");
 
         // 32-bit
         int maxInt = Integer.MAX_VALUE;
-        System.out.println("maxInt: " + maxInt);
+        System.out.println("maxInt: " + maxInt + ",\t\t\t\t size: " + Integer.BYTES * 8 + " bits");
 
         // 64-bit
         long minLong = Long.MIN_VALUE;
-        System.out.println("minLong: " + minLong);
+        System.out.println("minLong: " + minLong + ",\t size: " + Long.BYTES * 8 + " bits");
 
         // 64-bit
         long maxLong = Long.MAX_VALUE;
-        System.out.println("maxLong: " + maxLong);
+        System.out.println("maxLong: " + maxLong + ",\t size: " + Long.BYTES * 8 + " bits");
 
         // 64-bit
         long longLiteral = 31415926535897932L;
