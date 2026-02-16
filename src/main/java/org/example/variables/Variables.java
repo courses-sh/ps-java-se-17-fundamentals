@@ -82,19 +82,19 @@ public class Variables {
 
         // 32-bit
         float minFloat = Float.MIN_VALUE;
-        System.out.println("minFloat: " + minFloat);
+        System.out.println("minFloat: " + minFloat + ",\t\t\t\t\t size: " + Float.BYTES * 8 + " bits");
 
         // 32-bit
         float maxFloat = Float.MAX_VALUE;
-        System.out.println("maxFloat: " + maxFloat);
+        System.out.println("maxFloat: " + maxFloat + ",\t\t\t\t size: " + Float.BYTES * 8 + " bits");
 
         // 64-bit
         double minDouble = Double.MIN_VALUE;
-        System.out.println("minDouble: " + minDouble);
+        System.out.println("minDouble: " + minDouble + ",\t\t\t\t size: " + Double.BYTES * 8 + " bits");
 
         // 64-bit
         double maxDouble = Double.MAX_VALUE;
-        System.out.println("maxDouble: " + maxDouble);
+        System.out.println("maxDouble: " + maxDouble + ",\t size: " + Double.BYTES * 8 + " bits");
         System.out.println();
     }
 
