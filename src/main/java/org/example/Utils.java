@@ -37,6 +37,7 @@ public class Utils {
                 Looping.dowWileLoop();
                 Looping.forLoop();
                 Looping.arrays();
+                Looping.arraysEnhancedForLoop();
                 break;
             case METHODS:
                 // 06 - Understanding Methods
