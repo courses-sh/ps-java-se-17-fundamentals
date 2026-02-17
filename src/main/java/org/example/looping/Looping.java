@@ -47,4 +47,15 @@ public class Looping {
         System.out.println("sum: " + sum);
         System.out.println();
     }
+
+    public static void arraysEnhancedForLoop() {
+        float[] vals = {10.0f, 20.0f, 30.0f, 40.0f, 50.0f, 60.0f, 70.0f};
+        float sum = 0.0f;
+
+        for (var i : vals) {
+            sum += i;
+        }
+        System.out.println("sum: " + sum);
+        System.out.println();
+    }
 }
